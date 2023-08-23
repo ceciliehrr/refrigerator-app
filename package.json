@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "snapmeal",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -10,6 +10,19 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.10.12"
+    "@astrojs/react": "^2.3.2",
+    "@astrojs/vue": "^2.2.1",
+    "@oslokommune/punkt-assets": "^6.0.0",
+    "@oslokommune/punkt-css": "^6.0.0",
+    "@oslokommune/punkt-react": "^6.0.0",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "astro": "^2.10.12",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "sass": "^1.66.1"
   }
 }

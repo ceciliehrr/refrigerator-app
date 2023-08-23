@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+@use "@pkt/scss/abstracts/variables" with ($font-path: "@oslokommune/punkt-assets/dist"
+);
+
+/* Bruk designsystemet */
+@use "@pkt/scss/pkt";
+
+
+
+.pkt-form {
+    max-width: 400px;
+}
+
+.pkt-btn--blue-light {
+    border-color: var(--color-yellow);
+}
