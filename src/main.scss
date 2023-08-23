@@ -10,8 +10,29 @@
 
 .pkt-form {
     max-width: 400px;
+    margin-top: 18px;
+    color: white;
+}
+
+.pkt-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .pkt-btn--blue-light {
-    border-color: var(--color-yellow);
+    background-color: var(--color-blue);
+    color: var(--color-blue-dark);
+}
+
+.ol-list {
+    max-width: 1150px;
+
+    & li {
+        margin-bottom: 1rem;
+    }
+
+    & span {
+        font-weight: bold;
+    }
 }

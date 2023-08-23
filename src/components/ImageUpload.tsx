@@ -25,14 +25,16 @@ export default function ImageUpload() {
       method: "POST",
       body: formData,
       headers: {
-        "X-API-Key": `${import.meta.env.API_KEY}`, // Replace with your actual API key
+        "X-API-Key": `${import.meta.env.API_KEY}`,
       },
+      mode: "cors"
     });
 
     const data = await response.json();
     if (data.message) {
       setResponseMessage(data.message);
     }
+
   }
 
   return (
@@ -47,7 +49,7 @@ export default function ImageUpload() {
           type="file"
           accept=".jpeg, .jpg, .png, .gif" // Specify accepted file formats
         />
-        <PktButton className="mt-size-16" skin="primary" variant="label-only" type="submit">
+        <PktButton className="mt-size-16 pkt-btn--blue-light" skin="primary" variant="icon-left" type="submit" iconName="apple">
           Snap en oppskrift
         </PktButton>
       </fieldset>

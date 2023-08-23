@@ -4,31 +4,66 @@ import ImageUpload from "../components/ImageUpload";
 ---
 
 <Layout title="Welcome to SnapMeal">
-  <main class="pkt-container pkt-container--center">
+  <main class="pkt-container pkt-container--tablet">
     <h1>Velkommen til SnapMeal</h1>
+    <h2 class="pkt-txt-30-medium">
+      Klar for en magisk matlagingseventyr? 🍳📸
+    </h2>
     <p>
-      To get started, open the directory <code>src/pages</code> in your project.<br
-      />
-      <strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
+      Velkommen til vår fantastiske "Snap en Oppskrift" funksjon! Her er hvordan
+      du bruker det:
+      <ol class="ol-list">
+        <li>
+          <span>Fang Øyeblikket med Kameraet Ditt:</span> Ta opp telefonen eller
+          kameraet ditt og ta et bilde av det fantastiske kjøleskapet ditt, fylt
+          med alle de fargerike ingrediensene som venter på å bli forvandlet til
+          en herlig rett.
+        </li>
+        <li>
+          <span>Last Opp Ditt Kjøleskapsmesterverk:</span>Klikk på "Choose file"
+          knappen ved siden av inputfeltet. Velg deretter bildet du nettopp tok
+          fra enheten din.
+        </li>
+        <li>
+          <span>Trykk "Snap en Oppskrift":</span> Etter at du har valgt bildet av
+          kjøleskapets herligheter, trykk på den fortryllende "Snap en Oppskrift"
+          knappen. Bildet ditt sendes nå til våre kulinariske algoritmer som vil
+          jobbe sin magi!
+        </li>
+        <li>
+          <span>Magi på Arbeid:</span> Våre algoritmer vil nå analysere bildet ditt
+          og identifisere ingrediensene som er der. De vil deretter blande sin digitale
+          trolldom og foreslå en oppskrift som passer perfekt til det du har tilgjengelig.
+        </li>
+        <li>
+          <span>Oppskriften Magi:</span> Etter noen øyeblikk vil en deilig oppskrift
+          dukke opp på skjermen. En rett skreddersydd etter ingrediensene i kjøleskapet
+          ditt. Følg oppskriften og lag ditt kulinariske mesterverk!
+        </li>
+      </ol>
+      <p>
+        Så, hva venter du på? Ta opp telefonen eller kameraet ditt, ta et bilde
+        av kjøleskapets skattekiste og last det opp i inputfeltet. La oss
+        deretter overraske deg med en oppskrift laget spesielt for deg! 📸🍽️
+      </p>
     </p>
 
     <ImageUpload client:only="react" />
   </main>
+
+  <style>
+    main {
+      padding-top: 3rem;
+      color: white;
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      line-height: 1;
+      text-align: center;
+    }
+  </style>
 </Layout>
-
-<style>
-  main {
-    padding: 1rem;
-    color: white;
-    font-size: 20px;
-    line-height: 1.6;
-  }
-
-  h1 {
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 1;
-    text-align: center;
-    margin-bottom: 1em;
-  }
-</style>
