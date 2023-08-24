@@ -1,5 +1,6 @@
 import React, { useState, FormEvent } from "react"; // Import FormEvent type
 import { PktButton, PktTextinput } from "@oslokommune/punkt-react";
+import ReactMarkdown from "react-markdown"; // Import ReactMarkdown
 
 export default function ImageUpload() {
   const [responseMessage, setResponseMessage] = useState("");
@@ -25,9 +26,8 @@ export default function ImageUpload() {
       method: "POST",
       body: formData,
       headers: {
-        "X-API-Key": `${import.meta.env.API_KEY}`,
+
       },
-      mode: "cors"
     });
 
     const data = await response.json();
@@ -54,7 +54,8 @@ export default function ImageUpload() {
         </PktButton>
       </fieldset>
 
-      {responseMessage && <p>{responseMessage}</p>}
+
+      {responseMessage && <ReactMarkdown>{responseMessage}</ReactMarkdown>}
     </form>
   );
 }
