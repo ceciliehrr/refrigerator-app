@@ -6,6 +6,9 @@
 /* Bruk designsystemet */
 @use "@pkt/scss/pkt";
 
+@use "sass:map";
+
+@use "@pkt/scss/abstracts/mixins/breakpoints" as *;
 
 
 .pkt-form {
@@ -25,7 +28,7 @@
     color: var(--color-blue-dark);
 }
 
-.ol-list {
+ol {
     max-width: 1150px;
 
     & li {
@@ -35,4 +38,40 @@
     & span {
         font-weight: bold;
     }
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+
+    @include bp("tablet-up") {
+        font-size: 4rem;
+    }
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    padding-top: 1rem;
+
+    @include bp("tablet-up") {
+        font-size: 2rem;
+    }
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+}
+
+.responsive-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
 }

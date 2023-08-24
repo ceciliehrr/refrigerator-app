@@ -26,7 +26,6 @@ export default function ImageUpload() {
       method: "POST",
       body: formData,
       headers: {
-
       },
     });
 
@@ -55,7 +54,10 @@ export default function ImageUpload() {
       </fieldset>
 
 
-      {responseMessage && <ReactMarkdown>{responseMessage}</ReactMarkdown>}
+      {responseMessage &&
+        <h1>WOW! En oppskrift:</h1> &&
+        <ReactMarkdown>{responseMessage}</ReactMarkdown>}
     </form>
+
   );
 }
